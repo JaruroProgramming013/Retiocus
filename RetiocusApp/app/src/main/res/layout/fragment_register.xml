@@ -1,14 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
     tools:context=".ui.RegisterFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <EditText
+        android:id="@+id/campoEmailRegistro"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:autofillHints="" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/disclaimerEmail"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/disclaimer_email" />
+
+    <EditText
+        android:id="@+id/campoTelefonoRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_telefono"
+        android:inputType="phone"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/disclaimerTelefono"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_height="wrap_content"
+        android:text="@string/disclaimer_telefono" />
+
+    <EditText
+        android:id="@+id/campoNombreRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/hint_username"
+        android:inputType="textPersonName"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/campoContrasenhaRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="20dp"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/boton_registrarse" />
+</LinearLayout>

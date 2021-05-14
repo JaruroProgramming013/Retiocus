@@ -18,7 +18,6 @@ import com.jruiz.retiocusapp.ui.ViewModelLogin;
 public class MainActivity extends AppCompatActivity {
 
     private ViewModelLogin viewModelLogin;
-    private String tokenUsuario;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
         //Cambiar a actividad de visualizacion de chats (condicional)
     }
 
-    public void iniciarSesion(){
-        viewModelLogin.getAuth().signInWithCustomToken(tokenUsuario)
+    public void iniciarSesion(String email, String contrasenha){
+        viewModelLogin.getAuth().signInWithEmailAndPassword(email, contrasenha)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -45,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                             Log.d("MainActivity","Sesion iniciada");
                             viewModelLogin.setUser(viewModelLogin.getAuth().getCurrentUser());
                             //Cambiar a actividad de visualizacion de chats
-                        //Si no funca
+                            //Si no funca
                         }else{
                             Log.w("MainActivity","Fallo en el inicio de sesion",task.getException());
                             Toast.makeText(MainActivity.this,"Fallo en el inicio de sesion",Toast.LENGTH_SHORT)
@@ -55,6 +54,10 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
+    public void registrarUsuario(){
+        viewModelLogin.getUser().
+        viewModelLogin.getAuth().createUserWithEmailAndPassword()
+    }
 
 
 }
