@@ -1,0 +1,9 @@
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\DAL\bin\Debug\DAL.dll
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\DAL\bin\Debug\DAL.pdb
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\DAL\bin\Debug\Entities.dll
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\DAL\bin\Debug\Entities.pdb
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\DAL\obj\Debug\DAL.dll
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\DAL\obj\Debug\DAL.pdb

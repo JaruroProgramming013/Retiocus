@@ -6,7 +6,22 @@
     <string name="hint_telefono">Número de telefono</string>
     <string name="hint_username">Nombre de usuario</string>
     <string name="hint_password">Contraseña</string>
-    <string name="disclaimer_email">Tu correo electrónico será usado para recuperación de contraseña, información de actualizaciones o enviar feedback a los desarrolladores.</string>
+    <string name="disclaimer_email">Tu correo electrónico será usado para el inicio de sesión, recuperación de contraseña, información de actualizaciones o enviar feedback a los desarrolladores.</string>
     <string name="disclaimer_telefono">Tu número de teléfono será usado para el servicio de notificaciones de chats.</string>
     <string name="boton_registrarse">Registrar usuario</string>
+    <string name="back">Volver</string>
+    <string name="wrong_pass_format">Formato de contraseña incorrecto</string>
+    <string name="pass_format">La contraseña debe tener al menos una mayúscula, un numero y entre 4 y 12 caracteres.</string>
+    <string name="switch_to_register">Registro</string>
+    <string name="log_in">Iniciar sesion</string>
+    <string name="no_acc">¿No tienes una cuenta?</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

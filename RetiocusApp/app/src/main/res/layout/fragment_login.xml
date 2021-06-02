@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".ui.RegisterFragment">
+
+
+    <EditText
+        android:id="@+id/campoEmailLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/campoContrasenhaLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword|textNoSuggestions"
+        android:maxLength="12"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/formatoContrasenhaLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/design_default_color_error"
+        android:text="@string/pass_format" />
+
+    <Button
+        android:id="@+id/botonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/log_in"
+        android:enabled="false"
+        />
+
+    <TextView
+        android:id="@+id/noAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/no_acc" />
+
+    <Button
+        android:id="@+id/botonARegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/switch_to_register" />
+</LinearLayout>

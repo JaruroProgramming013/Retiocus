@@ -2,10 +2,13 @@ package com.jruiz.retiocusapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -13,6 +16,9 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.jruiz.retiocusapp.repo.Repository;
+import com.jruiz.retiocusapp.ui.LoginFragment;
+import com.jruiz.retiocusapp.ui.RegisterFragment;
 import com.jruiz.retiocusapp.ui.ViewModelLogin;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,39 +30,43 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         viewModelLogin=new ViewModelProvider(this).get(ViewModelLogin.class);
-        viewModelLogin.setAuth(FirebaseAuth.getInstance());
+        viewModelLogin.iniciarAuth();
+
+        getSupportFragmentManager().beginTransaction()
+                .setReorderingAllowed(true)
+                .add(R.id.fragmentLoginRegister, LoginFragment.class,null)
+                .commit();
+
+        Observer<Integer> observadorCambioFragment= integer -> {
+            if(integer==1)
+                getSupportFragmentManager().beginTransaction()
+                    .setReorderingAllowed(true)
+                    .replace(R.id.fragmentLoginRegister, RegisterFragment.class, null)
+                    .addToBackStack(null)
+                    .commit();
+            else
+                getSupportFragmentManager().beginTransaction()
+                        .setReorderingAllowed(true)
+                        .replace(R.id.fragmentLoginRegister, LoginFragment.class, null)
+                        .addToBackStack(null)
+                        .commit();
+        };
+
+        Observer<Boolean> exitoRegistro=aBoolean -> {
+            if(aBoolean){
+                startActivity(new Intent(this,ChatActivity.class));
+            }
+        };
+
+        viewModelLogin.getExitoRegistro().observe(this,exitoRegistro);
+        viewModelLogin.getBotonVolverSeleccionado().observe(this,observadorCambioFragment);
     }
 
     @Override
     public void onStart() {
         super.onStart();
-        viewModelLogin.setUser(viewModelLogin.getAuth().getCurrentUser());
+        viewModelLogin.iniciarUsuario();
         //Cambiar a actividad de visualizacion de chats (condicional)
-    }
-
-    public void iniciarSesion(String email, String contrasenha){
-        viewModelLogin.getAuth().signInWithEmailAndPassword(email, contrasenha)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        //Si funca
-                        if(task.isSuccessful()){
-                            Log.d("MainActivity","Sesion iniciada");
-                            viewModelLogin.setUser(viewModelLogin.getAuth().getCurrentUser());
-                            //Cambiar a actividad de visualizacion de chats
-                            //Si no funca
-                        }else{
-                            Log.w("MainActivity","Fallo en el inicio de sesion",task.getException());
-                            Toast.makeText(MainActivity.this,"Fallo en el inicio de sesion",Toast.LENGTH_SHORT)
-                                    .show();
-                        }
-                    }
-                });
-    }
-
-    public void registrarUsuario(){
-        viewModelLogin.getUser().
-        viewModelLogin.getAuth().createUserWithEmailAndPassword()
     }
 
 

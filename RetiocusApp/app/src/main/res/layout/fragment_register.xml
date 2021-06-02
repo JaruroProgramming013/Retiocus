@@ -55,14 +55,31 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/hint_password"
-        android:inputType="textPassword"
-        android:layout_marginBottom="20dp"
+        android:inputType="textPassword|textNoSuggestions"
+        android:maxLength="12"
         android:autofillHints="" />
 
+    <TextView
+        android:id="@+id/formatoContrasenhaRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/design_default_color_error"
+        android:text="@string/pass_format" />
+
     <Button
-        android:id="@+id/button"
+        android:id="@+id/botonRegistro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/boton_registrarse" />
+        android:text="@string/boton_registrarse"
+        android:enabled="false"
+        />
+
+    <Button
+        android:id="@+id/volverALogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/back" />
 </LinearLayout>

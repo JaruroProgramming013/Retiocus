@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "651156826887",
+    "project_id": "retiocus",
+    "storage_bucket": "retiocus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651156826887:android:dfe6c1b54822499872f3a2",
+        "android_client_info": {
+          "package_name": "com.jruiz.retiocusapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651156826887-7rqgthin51t6nssfnuj2bt0kuntk518k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jruiz.retiocusapp",
+            "certificate_hash": "84ee0b8a0d25dd3c6ae2498384a9e669906a13ee"
+          }
+        },
+        {
+          "client_id": "651156826887-4mkhnrvbifg1ioj1j5gull77vv4b0iq2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiwRJNMLYghdllQV8ss5LigsfvPvNoMV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "651156826887-4mkhnrvbifg1ioj1j5gull77vv4b0iq2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

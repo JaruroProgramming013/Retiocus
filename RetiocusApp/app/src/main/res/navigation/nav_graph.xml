@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/registerFragment">
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.jruiz.retiocusapp.ui.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_chatActivity"
+            app:destination="@id/chatActivity"
+            app:enterAnim="@anim/fragment_fade_enter" />
+    </fragment>
+    <activity
+        android:id="@+id/chatActivity"
+        android:name="com.jruiz.retiocusapp.ChatActivity"
+        android:label="activity_chat"
+        tools:layout="@layout/activity_chat" />
+</navigation>
