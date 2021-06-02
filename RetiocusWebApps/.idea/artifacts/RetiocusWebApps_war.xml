@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="RetiocusWebApps:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>RetiocusWebApps</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="RetiocusWebApps-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="RetiocusWebApps:war exploded" />
+    </root>
+  </artifact>
+</component>
