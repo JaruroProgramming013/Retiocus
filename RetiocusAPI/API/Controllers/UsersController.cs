@@ -21,9 +21,7 @@ namespace API.Controllers
             return new string[] { "value1", "value2" };
         }
 
-
-        [Route("api/Users/{uid}/usersWithCommonThemes")]
-        [HttpGet]
+        // GET: api/Users/5
         public void Get(String uid)
         {
             HttpResponseMessage respuesta;

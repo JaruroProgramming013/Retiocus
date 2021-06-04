@@ -9,8 +9,8 @@ namespace Entities
     public class Chat
     {
         public int ID { get; }
-        public String UIDUno { get; set; }
-        public String UIDDos { get; set; }
+        public String UIDUno { get; }
+        public String UIDDos { get; }
 
         public Chat()
         {

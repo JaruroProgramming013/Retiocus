@@ -1,0 +1,6 @@
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\Entities\bin\Release\Entities.dll
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\Entities\bin\Release\Entities.pdb
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\Entities\obj\Release\Entities.csprojAssemblyReference.cache
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\Entities\obj\Release\Entities.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\Entities\obj\Release\Entities.dll
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\Entities\obj\Release\Entities.pdb

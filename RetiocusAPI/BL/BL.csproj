@@ -42,8 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="get\ChatsGetMethods.cs" />
+    <Compile Include="get\ThemesGetMethods.cs" />
     <Compile Include="get\UsersGetMethods.cs" />
     <Compile Include="post\ChatsPostMethods.cs" />
+    <Compile Include="post\ThemesPostMethods.cs" />
     <Compile Include="post\UsersPostMethods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

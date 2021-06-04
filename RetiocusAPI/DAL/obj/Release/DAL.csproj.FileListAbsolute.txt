@@ -1,0 +1,9 @@
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\DAL\bin\Release\DAL.dll
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\DAL\bin\Release\DAL.pdb
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\DAL\bin\Release\Entities.dll
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\DAL\bin\Release\Entities.pdb
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\DAL\obj\Release\DAL.csprojAssemblyReference.cache
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\DAL\obj\Release\DAL.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\DAL\obj\Release\DAL.csproj.CopyComplete
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\DAL\obj\Release\DAL.dll
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusAPI\DAL\obj\Release\DAL.pdb

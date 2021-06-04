@@ -17,22 +17,41 @@ public class ChatServerEndpoint {
     private static final Set<ChatServerEndpoint> endpointsServer=new CopyOnWriteArraySet<>();
 
     @OnOpen
-    public void OnOpen(Session sesion, @PathParam("uid") String uid) throws IOException{
+    public void OnOpen(Session sesion){
         sesionActual=sesion;
         endpointsServer.add(this);
     }
 
     @OnMessage
-    public void OnMessage(Session sesion, Message mensaje) throws IOException {
+    public void OnMessage(Message mensaje){
         enviarMensaje(mensaje);
     }
 
     @OnClose
-    public void OnClose(Session sesion) throws IOException{
+    public void OnClose(){
         endpointsServer.remove(this);
     }
 
-    private static void enviarMensaje(Message mensaje) throws IOException{
+    @OnError
+    public void OnError(Throwable error) throws IOException{
+        CloseReason razon;
+
+        switch (error.getClass().getName()){
+            case "IOException":
+                razon=new CloseReason(CloseReason.CloseCodes.PROTOCOL_ERROR,"Error en el flujo de entrada salida: "+error.getMessage());
+                break;
+            case "EncodeException":
+                razon=new CloseReason(CloseReason.CloseCodes.TOO_BIG,"Mensaje demasiado grande: "+error.getMessage());
+                break;
+            default:
+                razon=new CloseReason(CloseReason.CloseCodes.NO_STATUS_CODE,"Error desconocido: "+error.getMessage());
+        }
+
+        sesionActual.close(razon);
+        endpointsServer.remove(this);
+    }
+
+    private static void enviarMensaje(Message mensaje){
         endpointsServer.forEach(endpoint->{
             synchronized (endpoint){
                 try {

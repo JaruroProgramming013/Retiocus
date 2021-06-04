@@ -87,6 +87,8 @@
           <element id="library" level="project" name="Maven: com.squareup.retrofit2:retrofit:2.6.1" />
           <element id="library" level="project" name="Maven: com.squareup.okhttp3:okhttp:3.12.0" />
           <element id="library" level="project" name="Maven: com.squareup.okio:okio:1.15.0" />
+          <element id="library" level="project" name="Maven: com.squareup.retrofit2:converter-gson:2.8.0" />
+          <element id="library" level="project" name="Maven: org.jetbrains:annotations:21.0.1" />
         </element>
       </element>
       <element id="directory" name="META-INF">

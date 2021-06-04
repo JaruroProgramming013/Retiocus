@@ -18,11 +18,9 @@ namespace API.Controllers
         {
             return new string[] { "value1", "value2" };
         }
-
-        [Route("api/Chats/{uid}/chatsOfUser")]
-        [HttpGet]
+        
         // GET: api/Chats/5
-        public string Get(String uid)
+        public void Get(String uid)
         {
             HttpResponseMessage respuesta;
 
