@@ -1,45 +1,46 @@
-package com.example.retiocus.RetiocusWebApps;
+package com.example.retiocus.RetiocusWebApps.websocket.endpoints;
 
-import com.google.api.client.json.gson.GsonFactory;
-import retrofit2    .Retrofit;
+import com.example.retiocus.RetiocusWebApps.retrofit.callbacks.ChatCallback;
+import com.example.retiocus.RetiocusWebApps.retrofit.callbacks.UserCallback;
+import com.example.retiocus.RetiocusWebApps.retrofit.interfaces.ChatInterface;
+import com.example.retiocus.RetiocusWebApps.retrofit.interfaces.UserInterface;
+import com.example.retiocus.RetiocusWebApps.retrofit.models.ChatListWithPetitioner;
+import com.example.retiocus.RetiocusWebApps.retrofit.models.UserListWithPetitioner;
+import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-import javax.annotation.Nullable;
 import javax.websocket.*;
 import javax.websocket.server.PathParam;
-import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
-import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
 
-@ServerEndpoint(value = "chats/{uid}/allChats")
-public class ChatsOfUserServerEndpoint {
+public class UsersWithCommonThemesServerEndpoint {
     private Session sesionActual;
     private final Retrofit retrofit=new Retrofit.Builder()
             .baseUrl("https://retiocusapi.azurewebsites.net/api")
             .addConverterFactory(GsonConverterFactory.create())
             .build();
-    private static final Set<ChatsOfUserServerEndpoint> couEndpoints=new CopyOnWriteArraySet<>();
+    private static final Set<UsersWithCommonThemesServerEndpoint> uwctEndpoints=new CopyOnWriteArraySet<>();
 
     @OnOpen
     public void OnOpen(Session sesion, @PathParam("uid") String uid){
         sesionActual=sesion;
-        couEndpoints.add(this);
+        uwctEndpoints.add(this);
 
-        ChatCallback chatCallback=new ChatCallback();
-        ChatInterface chatInterface=retrofit.create(ChatInterface.class);
+        UserCallback userCallback=new UserCallback();
+        UserInterface userInterface=retrofit.create(UserInterface.class);
 
-        chatInterface.chatsDe(uid).enqueue(chatCallback);
+        userInterface.usuariosConTemasComunesCon(uid).enqueue(userCallback);
     }
 
     @OnClose
     public void OnClose(){
-        couEndpoints.remove(this);
+        uwctEndpoints.remove(this);
     }
 
     @OnError
-    public void OnError(Throwable error) throws IOException{
+    public void OnError(Throwable error) throws IOException {
         CloseReason razon;
 
         switch (error.getClass().getName()){
@@ -54,15 +55,16 @@ public class ChatsOfUserServerEndpoint {
         }
 
         sesionActual.close(razon);
-        couEndpoints.remove(this);
+        uwctEndpoints.remove(this);
     }
 
-    public static void broadcast(ChatListWithPetitioner chatListWithPetitioner) throws IOException, EncodeException {
-        couEndpoints.forEach(endpoint->{
+    public static void broadcast(UserListWithPetitioner userListWithPetitioner){
+        uwctEndpoints.forEach(endpoint->{
             synchronized (endpoint){
-                if(endpoint.sesionActual.getId().equals(chatListWithPetitioner.getUid())) {
+                if(endpoint.sesionActual.getId().equals(userListWithPetitioner.getUidSolicitante())) {
                     try {
-                        endpoint.sesionActual.getBasicRemote().sendObject(chatListWithPetitioner);
+                        endpoint.sesionActual.getBasicRemote().sendObject(userListWithPetitioner);
+                        endpoint.sesionActual.close();
                     } catch (IOException | EncodeException e) {
                         e.printStackTrace();
                     }

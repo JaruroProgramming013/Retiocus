@@ -1,5 +1,6 @@
-package com.example.retiocus.RetiocusWebApps;
+package com.example.retiocus.RetiocusWebApps.websocket.encoders;
 
+import com.example.retiocus.RetiocusWebApps.entities.Message;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

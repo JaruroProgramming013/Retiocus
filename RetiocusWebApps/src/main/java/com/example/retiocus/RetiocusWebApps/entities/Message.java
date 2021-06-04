@@ -1,4 +1,4 @@
-package com.example.retiocus.RetiocusWebApps;
+package com.example.retiocus.RetiocusWebApps.entities;
 
 import java.time.LocalDateTime;
 

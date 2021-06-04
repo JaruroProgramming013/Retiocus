@@ -1,12 +1,13 @@
-package com.example.retiocus.RetiocusWebApps;
+package com.example.retiocus.RetiocusWebApps.websocket.endpoints;
+
+import com.example.retiocus.RetiocusWebApps.entities.Message;
+import com.example.retiocus.RetiocusWebApps.websocket.decoders.MessageDecoder;
+import com.example.retiocus.RetiocusWebApps.websocket.encoders.MessageEncoder;
 
 import javax.websocket.*;
-import javax.websocket.server.PathParam;
 import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.Set;
-import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.CopyOnWriteArraySet;
 
 @ServerEndpoint(value = "chats/{uid}",

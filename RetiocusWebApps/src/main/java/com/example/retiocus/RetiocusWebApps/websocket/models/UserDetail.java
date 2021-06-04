@@ -1,4 +1,4 @@
-package com.example.retiocus.RetiocusWebApps;
+package com.example.retiocus.RetiocusWebApps.websocket.models;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthException;
@@ -38,9 +38,8 @@ public class UserDetail {
     }
 
     public static UserDetail fromUID(String uid) throws FirebaseAuthException {
-        UserRecord recordUsuario= FirebaseAuth.getInstance().getUser(uid);
-        return new UserDetail(recordUsuario.getUid(),
-                recordUsuario.getDisplayName(),
-                recordUsuario.getEmail());
+        UserRecord record= FirebaseAuth.getInstance().getUser(uid);
+
+        return new UserDetail(uid,record.getDisplayName(), record.getEmail());
     }
 }

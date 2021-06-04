@@ -1,6 +1,4 @@
-package com.example.retiocus.RetiocusWebApps;
-
-import com.google.firebase.auth.FirebaseAuthException;
+package com.jruiz.retiocusapp.websocket.models;
 
 public class ChatDetail {
     private int ID;
@@ -36,10 +34,4 @@ public class ChatDetail {
         this.usuarioDos = usuarioDos;
     }
 
-    public static ChatDetail detallar(Chat chat) throws FirebaseAuthException {
-        UserDetail usuarioUno=UserDetail.fromUID(chat.getUIDUno()),
-        usuarioDos=UserDetail.fromUID(chat.getUIDDos());
-
-        return new ChatDetail(chat.getID(),usuarioUno,usuarioDos);
-    }
 }

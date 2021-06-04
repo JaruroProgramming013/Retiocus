@@ -1,5 +1,6 @@
-package com.example.retiocus.RetiocusWebApps;
+package com.example.retiocus.RetiocusWebApps.retrofit.interfaces;
 
+import com.example.retiocus.RetiocusWebApps.entities.Chat;
 import retrofit2.Call;
 import retrofit2.http.GET;
 

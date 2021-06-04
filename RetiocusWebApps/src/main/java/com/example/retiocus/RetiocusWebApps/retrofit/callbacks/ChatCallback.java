@@ -1,5 +1,9 @@
-package com.example.retiocus.RetiocusWebApps;
+package com.example.retiocus.RetiocusWebApps.retrofit.callbacks;
 
+import com.example.retiocus.RetiocusWebApps.entities.Chat;
+import com.example.retiocus.RetiocusWebApps.websocket.endpoints.ChatsOfUserServerEndpoint;
+import com.example.retiocus.RetiocusWebApps.websocket.models.ChatDetail;
+import com.example.retiocus.RetiocusWebApps.retrofit.models.ChatListWithPetitioner;
 import com.google.firebase.auth.FirebaseAuthException;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -32,11 +36,7 @@ public class ChatCallback implements Callback<List<Chat>> {
             chats=new ChatListWithPetitioner(uidSolicitante, chatDetails);
         }
 
-        try {
-            ChatsOfUserServerEndpoint.broadcast(chats);
-        } catch (IOException | EncodeException e) {
-            e.printStackTrace();
-        }
+        ChatsOfUserServerEndpoint.broadcast(chats);
     }
 
     @Override

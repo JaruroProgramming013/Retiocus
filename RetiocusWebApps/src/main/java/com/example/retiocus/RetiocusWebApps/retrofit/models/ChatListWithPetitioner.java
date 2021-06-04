@@ -1,4 +1,6 @@
-package com.example.retiocus.RetiocusWebApps;
+package com.example.retiocus.RetiocusWebApps.retrofit.models;
+
+import com.example.retiocus.RetiocusWebApps.websocket.models.ChatDetail;
 
 import java.util.ArrayList;
 import java.util.List;
