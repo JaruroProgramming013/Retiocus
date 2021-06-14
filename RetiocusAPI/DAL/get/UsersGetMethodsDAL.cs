@@ -11,6 +11,12 @@ namespace DAL.get
 {
     public static class UsersGetMethodsDAL
     {
+        /// <summary>
+        /// Trae los UID de los usuarios con
+        /// temas comunes y que no tengan un chat con respecto al solicitante de la BBDD.
+        /// </summary>
+        /// <param name="uidUsuarioSolicitante">UID del usuario solicitante de la peticion</param>
+        /// <returns>Listado de usuarios con temas comunes. Si no hay datos, estará vacio</returns>
         public static List<String> getListadoUsuariosTemasComunes(String uidUsuarioSolicitante)
         {
             List<String> listadoUidsUsuarios = new List<String>();
@@ -29,7 +35,7 @@ namespace DAL.get
 
                 miComando.CommandType = CommandType.Text;
 
-                miComando.CommandText = "SELECT SeleccionarUsuariosConTemasComunes(@uidSolicitante)";
+                miComando.CommandText = "SELECT uid_usuario FROM SeleccionarUsuariosConTemasComunes(@uidSolicitante)";
 
                 parametro.ParameterName = "@uidSolicitante";
 

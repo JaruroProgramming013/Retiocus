@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.slider.PickerTemasFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seleccionar_temas"
+            android:fontFamily="@font/title_font_jetbrains_nl_bold"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="50dp"
+            />
+
+        <SearchView
+            android:id="@+id/buscaTemas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:queryHint="@string/search_theme"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listaTemas"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/temas_instrucciones"
+            android:layout_marginBottom="20dp"
+            />
+
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/borrarSeleccionTemas"
+            android:text="@string/clear_themes"
+            />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

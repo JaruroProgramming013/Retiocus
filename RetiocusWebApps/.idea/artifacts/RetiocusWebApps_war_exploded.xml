@@ -89,6 +89,10 @@
           <element id="library" level="project" name="Maven: com.squareup.okio:okio:1.15.0" />
           <element id="library" level="project" name="Maven: com.squareup.retrofit2:converter-gson:2.8.0" />
           <element id="library" level="project" name="Maven: org.jetbrains:annotations:21.0.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.tyrus:tyrus-server:1.0" />
+          <element id="library" level="project" name="Maven: org.glassfish.tyrus:tyrus-core:1.0" />
+          <element id="library" level="project" name="Maven: org.glassfish.tyrus:tyrus-spi:1.0" />
+          <element id="library" level="project" name="Maven: org.glassfish.tyrus:tyrus-websocket-core:1.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">

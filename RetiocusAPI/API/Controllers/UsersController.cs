@@ -6,6 +6,7 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Http.Formatting;
 using System.Runtime.Remoting.Messaging;
+using System.Web;
 using System.Web.Http;
 using BL.get;
 using BL.post;
@@ -21,6 +22,8 @@ namespace API.Controllers
             return new string[] { "value1", "value2" };
         }
 
+        [Route("api/Users/{uid}")]
+        [HttpGet]
         // GET: api/Users/5
         public void Get(String uid)
         {
@@ -50,19 +53,16 @@ namespace API.Controllers
         {
             HttpResponseMessage respuesta;
 
-            bool success = false;
-
             try
             {
-                success = UsersPostMethods.postUsuarioNuevo(value);
+                bool success = UsersPostMethods.postUsuarioNuevo(value);
+                respuesta = Request.CreateResponse(!success ? HttpStatusCode.NoContent : HttpStatusCode.OK);
             }
             catch (SqlException sqlEx)
             {
                 respuesta = Request.CreateErrorResponse(HttpStatusCode.ServiceUnavailable,
                     "Error en la base de datos: " + sqlEx.StackTrace);
             }
-
-            respuesta = Request.CreateResponse(!success ? HttpStatusCode.NoContent : HttpStatusCode.OK);
 
             throw new HttpResponseException(respuesta);
         }

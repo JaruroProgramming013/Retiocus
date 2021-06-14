@@ -4,16 +4,22 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_retiocus"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_retiocus_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RetiocusApp">
+        <activity android:name=".activities.NewChatActivity"/>
+        <activity android:name=".activities.SliderActivity" />
+        <activity android:name=".activities.SliderEditActivity"/>
+        <activity android:name=".activities.ChattingActivity"
+            android:theme="@style/Theme.RetiocusApp.NoActionBar"
+            />
         <activity
-            android:name=".ChatActivity"
+            android:name=".activities.ChatActivity"
             android:label="@string/title_activity_chat"
-            android:theme="@style/Theme.RetiocusApp.NoActionBar"></activity>
-        <activity android:name=".MainActivity">
+            android:theme="@style/Theme.RetiocusApp.NoActionBar" />
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

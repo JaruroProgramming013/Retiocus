@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.slider.Bienvenida">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:paddingTop="50dp"
+            android:textSize="20sp"
+            android:id="@+id/titulo"
+            android:fontFamily="@font/title_font_jetbrains_nl_bold"
+            android:text="@string/welcome" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/titulo"
+            android:layout_marginBottom="20dp"
+            android:src="@mipmap/retiocus" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:id="@+id/horaDe"
+            android:layout_centerHorizontal="true"
+            android:text="@string/welcome_explanation"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/horaDe"
+            android:layout_alignEnd="@id/horaDe"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/slider_instructions"
+            android:layout_below="@id/horaDe"
+            />
+
+    </RelativeLayout>
+</ScrollView>

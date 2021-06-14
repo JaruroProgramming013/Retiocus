@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "QKnMnvCu2RpwK+xZuiHRfr1bLtYZ8260y5Gtd7yRA32dxeiGDRkO9QFBJs/ZCDrA9TjG8JiMyxtnuwYQEFBamw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\usuario\\Documents\\GitHub\\Retiocus\\RetiocusWebUtils\\UtilsEntities\\UtilsEntities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\usuario\\.nuget\\packages\\firebaseadmin\\2.1.0\\firebaseadmin.2.1.0.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\google.api.gax\\3.2.0\\google.api.gax.3.2.0.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\google.api.gax.rest\\3.2.0\\google.api.gax.rest.3.2.0.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\google.apis\\1.49.0\\google.apis.1.49.0.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\google.apis.auth\\1.49.0\\google.apis.auth.1.49.0.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\google.apis.core\\1.49.0\\google.apis.core.1.49.0.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

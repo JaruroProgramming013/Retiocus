@@ -13,6 +13,11 @@ namespace BL.post
 {
     public static class ChatsPostMethods
     {
+        /// <summary>
+        /// Añade un nuevo chat a la BBDD
+        /// </summary>
+        /// <param name="chat">El chat a añadir</param>
+        /// <returns>true si se ha insertado, false si no</returns>
         public static bool postChatNuevo(Chat chat)
         {
             bool success = false;

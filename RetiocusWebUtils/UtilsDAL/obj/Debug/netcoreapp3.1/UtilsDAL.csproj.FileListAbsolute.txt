@@ -1,0 +1,12 @@
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusWebUtils\UtilsDAL\bin\Debug\netcoreapp3.1\UtilsDAL.deps.json
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusWebUtils\UtilsDAL\bin\Debug\netcoreapp3.1\UtilsDAL.dll
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusWebUtils\UtilsDAL\bin\Debug\netcoreapp3.1\UtilsDAL.pdb
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusWebUtils\UtilsDAL\bin\Debug\netcoreapp3.1\UtilsEntities.dll
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusWebUtils\UtilsDAL\bin\Debug\netcoreapp3.1\UtilsEntities.pdb
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusWebUtils\UtilsDAL\obj\Debug\netcoreapp3.1\UtilsDAL.csprojAssemblyReference.cache
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusWebUtils\UtilsDAL\obj\Debug\netcoreapp3.1\UtilsDAL.AssemblyInfoInputs.cache
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusWebUtils\UtilsDAL\obj\Debug\netcoreapp3.1\UtilsDAL.AssemblyInfo.cs
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusWebUtils\UtilsDAL\obj\Debug\netcoreapp3.1\UtilsDAL.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusWebUtils\UtilsDAL\obj\Debug\netcoreapp3.1\UtilsDAL.csproj.CopyComplete
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusWebUtils\UtilsDAL\obj\Debug\netcoreapp3.1\UtilsDAL.dll
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusWebUtils\UtilsDAL\obj\Debug\netcoreapp3.1\UtilsDAL.pdb

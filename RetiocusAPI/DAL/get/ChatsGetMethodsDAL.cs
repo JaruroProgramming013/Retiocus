@@ -9,8 +9,13 @@ using Entities;
 
 namespace DAL.get
 {
-    public class ChatsGetMethodsDAL
+    public static class ChatsGetMethodsDAL
     {
+        /// <summary>
+        /// Trae el listado de chats de la BBDD.
+        /// </summary>
+        /// <param name="uidUsuarioSolicitante">UID del usuario que pertenece a los chats traidos</param>
+        /// <returns>Listado de chats. Si no hay datos, estará vacio.</returns>
         public static List<Chat> getChatsDeUsuario(String uidUsuarioSolicitante)
         {
             List<Chat> listadoChats = new List<Chat>();
@@ -33,7 +38,7 @@ namespace DAL.get
 
                 miComando.CommandType = CommandType.Text;
 
-                miComando.CommandText = "SELECT ChatsDeUsuario(@uidSolicitante)";
+                miComando.CommandText = "SELECT ID, uid_usuario_1, uid_usuario_2 FROM ChatsDeUsuario(@uidSolicitante)";
 
                 parametro.ParameterName = "@uidSolicitante";
 
@@ -47,9 +52,9 @@ namespace DAL.get
 
                     while (lector.Read())
                     {
-                        listadoChats.Add(new Chat((int)lector["ID"],
-                            (String)lector["uid_usuario_1"],
-                            (String)lector["uid_usuario_2"]));
+                        listadoChats.Add(new Chat((int)lector[0],
+                            (String)lector[1],
+                            (String)lector[2]));
                     }
 
                 else

@@ -1,0 +1,9 @@
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusWebUtils\UtilsEntities\bin\Release\netcoreapp3.1\UtilsEntities.deps.json
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusWebUtils\UtilsEntities\bin\Release\netcoreapp3.1\UtilsEntities.dll
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusWebUtils\UtilsEntities\bin\Release\netcoreapp3.1\UtilsEntities.pdb
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusWebUtils\UtilsEntities\obj\Release\netcoreapp3.1\UtilsEntities.csprojAssemblyReference.cache
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusWebUtils\UtilsEntities\obj\Release\netcoreapp3.1\UtilsEntities.AssemblyInfoInputs.cache
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusWebUtils\UtilsEntities\obj\Release\netcoreapp3.1\UtilsEntities.AssemblyInfo.cs
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusWebUtils\UtilsEntities\obj\Release\netcoreapp3.1\UtilsEntities.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusWebUtils\UtilsEntities\obj\Release\netcoreapp3.1\UtilsEntities.dll
+C:\Users\usuario\Documents\GitHub\Retiocus\RetiocusWebUtils\UtilsEntities\obj\Release\netcoreapp3.1\UtilsEntities.pdb

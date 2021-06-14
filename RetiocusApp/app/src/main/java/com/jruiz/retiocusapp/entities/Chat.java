@@ -1,13 +1,6 @@
 package com.jruiz.retiocusapp.entities;
 
-import androidx.room.Entity;
-import androidx.room.PrimaryKey;
-
-import java.sql.Date;
-
-@Entity
 public class Chat {
-    @PrimaryKey
     private int ID;
 
     private String UIDUno;
@@ -43,8 +36,8 @@ public class Chat {
         UIDDos="";
     }
 
-    public Chat(int ID, String UIDUno, String UIDDos) {
-        this.ID = ID;
+    public Chat(String UIDUno, String UIDDos) {
+        this.ID = 0;
         this.UIDUno = UIDUno;
         this.UIDDos = UIDDos;
     }

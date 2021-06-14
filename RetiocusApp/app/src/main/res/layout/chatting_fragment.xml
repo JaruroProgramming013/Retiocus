@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/toolbarChatting"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:menu="@menu/chatting_menu"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:id="@+id/iconoOtroUsuario"
+            app:strokeColor="@android:color/darker_gray"
+            android:src="@drawable/retiocus_main_pfp"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            app:strokeWidth="1dp"/>
+
+        <TextView
+            android:id="@+id/nombreOtroUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/title_font_jetbrains_nl_bold"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/listaMensajes"
+        android:layout_height="500dp"
+        android:layout_marginTop="?attr/actionBarSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/parteMensajes"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        >
+        <EditText
+            android:id="@+id/textoMensaje"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/botonEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idChatActual"
+        >
+
+    </TextView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

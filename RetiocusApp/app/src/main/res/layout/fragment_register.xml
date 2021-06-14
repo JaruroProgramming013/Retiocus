@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="300dp"
+    android:layout_width="350dp"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_gravity="center"
-    tools:context=".ui.RegisterFragment">
+    tools:context=".ui.loginRegister.RegisterFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/please_confirm"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/disclaimerRelogin"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/campoEmailRelogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/campoEmailRegistro"
@@ -18,26 +37,10 @@
 
     <TextView
         android:id="@+id/disclaimerEmail"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/disclaimer_email" />
-
-    <EditText
-        android:id="@+id/campoTelefonoRegistro"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/hint_telefono"
-        android:inputType="phone"
-        android:autofillHints="" />
-
-    <TextView
-        android:id="@+id/disclaimerTelefono"
-        android:layout_width="match_parent"
-        android:layout_marginBottom="50dp"
-        android:layout_height="wrap_content"
-        android:text="@string/disclaimer_telefono" />
 
     <EditText
         android:id="@+id/campoNombreRegistro"
@@ -48,6 +51,17 @@
         android:hint="@string/hint_username"
         android:inputType="textPersonName"
         android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/campoContrasenhaRelogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword|textNoSuggestions"
+        android:maxLength="12"
+        android:visibility="gone"
+        android:autofillHints=""/>
 
     <EditText
         android:id="@+id/campoContrasenhaRegistro"
@@ -68,6 +82,16 @@
         android:text="@string/pass_format" />
 
     <Button
+        android:id="@+id/logInCredFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/log_in"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:enabled="false"
+        />
+
+    <Button
         android:id="@+id/botonRegistro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -82,4 +106,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/back" />
+
+
 </LinearLayout>

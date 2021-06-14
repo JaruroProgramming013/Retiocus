@@ -10,6 +10,11 @@ using System.Threading.Tasks;
 namespace DAL.post
 {   public static class UsersPostMethodsDAL
     {
+        /// <summary>
+        /// Añade un nuevo usuario a la BBDD
+        /// </summary>
+        /// <param name="uidUsuario">UID del Usuario a insertar</param>
+        /// <returns>true si se ha insertado, false si no</returns>
         public static bool postUsuarioNuevo(String uidUsuario)
         {
             bool success = false;
@@ -30,9 +35,7 @@ namespace DAL.post
 
                 miComando.CommandText = "AnhadirUsuario";
 
-                parametro.ParameterName = "@uidSolicitante";
-
-                parametro.SqlDbType = SqlDbType.VarChar;
+                parametro.ParameterName = "@uidUsuario";
 
                 parametro.Value = uidUsuario;
 

@@ -11,12 +11,13 @@ import retrofit2.http.Path;
 import java.util.List;
 
 public interface TemaInterface {
-    @GET("/Themes/{uidSolicitante}/sharedWith/{uidSolicitado}")
+    @GET("/api/Themes/{uidSolicitante}/sharedWith/{uidSolicitado}")
     Call<List<Tema>> temasComunesEntre(@Path("uidSolicitante}") String uidSolicitante, @Path("uidSolicitado}") String uidSolicitado);
 
-    @GET("/Themes/{uid}")
+    @GET("/api/Themes/{uid}")
     Call<List<Tema>> temasDe(@Path("uid") String uid);
 
-    @POST("/Themes")
-    Call<Tema> anhadirTema(@Body Tema tema);
+    @GET("/api/Themes")
+    Call<List<Tema>> todosLosTemas();
+
 }

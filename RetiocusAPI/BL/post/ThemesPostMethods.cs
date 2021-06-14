@@ -11,6 +11,11 @@ namespace BL.post
 {
     public static class ThemesPostMethods
     {
+        /// <summary>
+        /// Añade un nuevo tema a la BBDD
+        /// </summary>
+        /// <param name="tema">Tema a insertar</param>
+        /// <returns>true si se ha insertado, false si no</returns>
         public static bool postTemaNuevo(Tema tema)
         {
             bool success = false;

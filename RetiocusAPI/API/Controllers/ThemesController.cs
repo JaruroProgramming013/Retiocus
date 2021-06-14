@@ -14,18 +14,11 @@ namespace API.Controllers
     public class ThemesController : ApiController
     {
         // GET: api/Themes
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        [Route("api/Themes/{uidSolicitante}/sharedWith/{uidSolicitado}")]
-        // GET: api/Themes/5/sharedWith/4
-        public void Get(String uidSolicitante, String uidSolicitado)
+        public void Get()
         {
             HttpResponseMessage respuesta;
 
-            List<Tema> listadoTemas = ThemesGetMethods.getListadoTemasComunes(uidSolicitante,uidSolicitado);
+            List<Tema> listadoTemas = ThemesGetMethods.getListadoTemas();
 
             if (listadoTemas[0].Nombre.Contains("Error en la base de datos"))
             {
@@ -44,6 +37,27 @@ namespace API.Controllers
             throw new HttpResponseException(respuesta);
         }
 
+        [Route("api/Themes/{uidSolicitante}/sharedWith/{uidSolicitado}")]
+        // GET: api/Themes/5/sharedWith/4
+        public void Get(String uidSolicitante, String uidSolicitado)
+        {
+            HttpResponseMessage respuesta;
+
+            try
+            {
+                int numeroTemas=ThemesGetMethods.getNumeroTemasComunes(uidSolicitante, uidSolicitado);
+                respuesta = numeroTemas == 0 ? Request.CreateResponse(HttpStatusCode.NoContent) : Request.CreateResponse(HttpStatusCode.OK, numeroTemas);
+            }
+            catch (SqlException sqlEx)
+            {
+                respuesta = Request.CreateErrorResponse(HttpStatusCode.ServiceUnavailable,
+                    "Error en la base de datos: " + sqlEx.StackTrace);
+            }
+
+            throw new HttpResponseException(respuesta);
+        }
+
+        [Route("api/Themes/{uidSolicitante}")]
         // GET: api/Themes/5
         public void Get(String uidSolicitante)
         {
@@ -73,19 +87,16 @@ namespace API.Controllers
         {
             HttpResponseMessage respuesta;
 
-            bool success = false;
-
             try
             {
-                success = ThemesPostMethods.postTemaNuevo(tema);
+                bool success = ThemesPostMethods.postTemaNuevo(tema);
+                respuesta = Request.CreateResponse(!success ? HttpStatusCode.NoContent : HttpStatusCode.OK);
             }
             catch (SqlException sqlEx)
             {
                 respuesta = Request.CreateErrorResponse(HttpStatusCode.ServiceUnavailable,
                     "Error en la base de datos: " + sqlEx.StackTrace);
             }
-
-            respuesta = Request.CreateResponse(!success ? HttpStatusCode.NoContent : HttpStatusCode.OK);
 
             throw new HttpResponseException(respuesta);
         }

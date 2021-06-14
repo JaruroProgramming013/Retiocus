@@ -29,6 +29,7 @@
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="com.squareup.retrofit2:retrofit:2.6.1" level="project" />
+    <orderEntry type="library" name="org.glassfish.tyrus:tyrus-server:1.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:4.0.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.websocket:javax.websocket-api:1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter-api:5.7.0" level="project" />
@@ -112,5 +113,9 @@
     <orderEntry type="library" name="Maven: com.squareup.okio:okio:1.15.0" level="project" />
     <orderEntry type="library" name="Maven: com.squareup.retrofit2:converter-gson:2.8.0" level="project" />
     <orderEntry type="library" name="Maven: org.jetbrains:annotations:21.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.tyrus:tyrus-server:1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.tyrus:tyrus-core:1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.tyrus:tyrus-spi:1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.tyrus:tyrus-websocket-core:1.0" level="project" />
   </component>
 </module>

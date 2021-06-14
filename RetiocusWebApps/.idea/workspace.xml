@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="RetiocusWebApps:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1f8cbf41-0925-4dc9-9593-c3fbc055c0f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/.idea/render.experimental.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/ic_launcher_retiocus-playstore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/ic_pfp_default-playstore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/activities/NewChatActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/activities/SliderActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/retrofit/interfaces/PostInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/retrofit/interfaces/PreferenciaInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/retrofit/models/UserListWithPetitioner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/ui/chat/ChatListFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/ui/chat/ChatViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/ui/slider/Bienvenida.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/ui/slider/PickerTemasFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/ui/slider/SeleccionarPFPFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/ui/slider/SliderFinalFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/ui/slider/SliderViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/websocket/endpoints/UsersWithCommonThemesClientEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/drawable-v24/baseline_edit_black_48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/drawable-v24/retiocus_main_pfp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/font/title_font_jetbrains_nl_bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/layout/activity_new_chat.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/layout/chat_list_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/layout/chat_list_row.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/layout/edit_credentials_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/layout/edit_current_user_choice.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/layout/fragment_bienvenida.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/layout/fragment_picker_temas.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/layout/fragment_seleccionar_p_f_p.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/layout/fragment_slider_final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/layout/temas_row.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/layout/user_detail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/layout/user_result_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/layout/user_result_row.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/layout/view_pager.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/menu/chat_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_retiocus.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_retiocus_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-anydpi-v26/ic_pfp_default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-anydpi-v26/ic_pfp_default_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-hdpi/ic_launcher_retiocus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-hdpi/ic_launcher_retiocus_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-hdpi/ic_pfp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-hdpi/ic_pfp_default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-hdpi/ic_pfp_default_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-hdpi/retiocus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-mdpi/ic_launcher_retiocus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-mdpi/ic_launcher_retiocus_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-mdpi/ic_pfp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-mdpi/ic_pfp_default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-mdpi/ic_pfp_default_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-mdpi/retiocus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-xhdpi/ic_launcher_retiocus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-xhdpi/ic_launcher_retiocus_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-xhdpi/ic_pfp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-xhdpi/ic_pfp_default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-xhdpi/ic_pfp_default_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-xhdpi/retiocus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-xxhdpi/ic_launcher_retiocus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-xxhdpi/ic_launcher_retiocus_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-xxhdpi/ic_pfp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-xxhdpi/ic_pfp_default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-xxhdpi/ic_pfp_default_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-xxhdpi/retiocus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher_retiocus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher_retiocus_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-xxxhdpi/ic_pfp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-xxxhdpi/ic_pfp_default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-xxxhdpi/ic_pfp_default_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/mipmap-xxxhdpi/retiocus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/values/ic_pfp_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/values/retiocus_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_tyrus_tyrus_core_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_tyrus_tyrus_server_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_tyrus_tyrus_spi_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_tyrus_tyrus_websocket_core_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_glassfish_tyrus_tyrus_server_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/.vs/RetiocusAPI/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/.vs/RetiocusAPI/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/App_Start/BundleConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/Controllers/ChatsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/Controllers/ChatsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/Controllers/ThemesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/Controllers/ThemesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/Controllers/UsersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/Controllers/UsersController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/Global.asax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/Global.asax.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/bin/API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/bin/API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/bin/API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/bin/API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/bin/BL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/bin/BL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/bin/BL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/bin/BL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/bin/DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/bin/DAL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/bin/DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/bin/DAL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Debug/API.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Debug/API.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Debug/API.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Debug/API.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Debug/API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Debug/API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Debug/API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Debug/API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Release/API.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Release/API.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Release/API.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Release/API.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Release/API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Release/API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Release/API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Release/API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Release/Package/PackageTmp/bin/API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Release/Package/PackageTmp/bin/API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Release/Package/PackageTmp/bin/API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Release/Package/PackageTmp/bin/API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Release/Package/PackageTmp/bin/BL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Release/Package/PackageTmp/bin/BL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Release/Package/PackageTmp/bin/BL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Release/Package/PackageTmp/bin/BL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Release/Package/PackageTmp/bin/DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Release/Package/PackageTmp/bin/DAL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Release/Package/PackageTmp/bin/DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/API/obj/Release/Package/PackageTmp/bin/DAL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/BL/BL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/BL/BL.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/BL/bin/Debug/BL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/BL/bin/Debug/BL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/BL/bin/Debug/BL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/BL/bin/Debug/BL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/BL/bin/Debug/DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/BL/bin/Debug/DAL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/BL/bin/Debug/DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/BL/bin/Debug/DAL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/BL/bin/Debug/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/BL/bin/Debug/Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/BL/bin/Debug/Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/BL/bin/Debug/Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/BL/bin/Release/BL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/BL/bin/Release/BL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/BL/bin/Release/BL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/BL/bin/Release/BL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/BL/bin/Release/DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/BL/bin/Release/DAL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/BL/bin/Release/DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/BL/bin/Release/DAL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/BL/get/ChatsGetMethods.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/BL/get/ChatsGetMethods.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/BL/get/ThemesGetMethods.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/BL/get/ThemesGetMethods.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/BL/get/UsersGetMethods.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/BL/get/UsersGetMethods.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/BL/obj/Debug/BL.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/BL/obj/Debug/BL.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/BL/obj/Debug/BL.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/BL/obj/Debug/BL.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/BL/obj/Debug/BL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/BL/obj/Debug/BL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/BL/obj/Debug/BL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/BL/obj/Debug/BL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/BL/obj/Release/BL.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/BL/obj/Release/BL.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/BL/obj/Release/BL.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/BL/obj/Release/BL.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/BL/obj/Release/BL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/BL/obj/Release/BL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/BL/obj/Release/BL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/BL/obj/Release/BL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/DAL/DAL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/DAL/DAL.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/DAL/bin/Debug/DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/DAL/bin/Debug/DAL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/DAL/bin/Debug/DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/DAL/bin/Debug/DAL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/DAL/bin/Debug/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/DAL/bin/Debug/Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/DAL/bin/Debug/Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/DAL/bin/Debug/Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/DAL/bin/Release/DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/DAL/bin/Release/DAL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/DAL/bin/Release/DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/DAL/bin/Release/DAL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/DAL/get/ChatsGetMethodsDAL.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/DAL/get/ChatsGetMethodsDAL.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/DAL/get/ThemesGetMethodsDAL.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/DAL/get/ThemesGetMethodsDAL.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/DAL/get/UsersGetMethodsDAL.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/DAL/get/UsersGetMethodsDAL.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/DAL/obj/Debug/DAL.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/DAL/obj/Debug/DAL.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/DAL/obj/Debug/DAL.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/DAL/obj/Debug/DAL.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/DAL/obj/Debug/DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/DAL/obj/Debug/DAL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/DAL/obj/Debug/DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/DAL/obj/Debug/DAL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/DAL/obj/Release/DAL.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/DAL/obj/Release/DAL.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/DAL/obj/Release/DAL.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/DAL/obj/Release/DAL.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/DAL/obj/Release/DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/DAL/obj/Release/DAL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/DAL/obj/Release/DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/DAL/obj/Release/DAL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/DAL/post/ThemesPostMethodsDAL.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/DAL/post/ThemesPostMethodsDAL.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/DAL/post/UsersPostMethodsDAL.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/DAL/post/UsersPostMethodsDAL.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/Entities/bin/Debug/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/Entities/bin/Debug/Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/Entities/bin/Debug/Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/Entities/bin/Debug/Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/Entities/obj/Debug/Entities.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/Entities/obj/Debug/Entities.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/Entities/obj/Debug/Entities.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/Entities/obj/Debug/Entities.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/Entities/obj/Debug/Entities.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/Entities/obj/Debug/Entities.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/Entities/obj/Debug/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/Entities/obj/Debug/Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusAPI/Entities/obj/Debug/Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusAPI/Entities/obj/Debug/Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusApp/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/ChatActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/activities/ChatActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/activities/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/entities/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/entities/Chat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/entities/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/entities/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/entities/Tema.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/entities/Tema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/repo/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/repo/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/repo/queries/models/NewChatResultQueryRow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/retrofit/callbacks/ListadoTemaCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/retrofit/interfaces/TemaInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/retrofit/interfaces/TemaInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/retrofit/models/TemasListWithPetitioner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/retrofit/models/TemasListWithPetitioner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/ui/LoginFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/ui/loginRegister/LoginFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/ui/RegisterFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/ui/loginRegister/RegisterFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/ui/ViewModelLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/ui/loginRegister/ViewModelLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/websocket/models/UserDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/java/com/jruiz/retiocusapp/websocket/models/UserDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/layout/activity_chat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/layout/activity_chat.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/layout/fragment_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/layout/fragment_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/layout/fragment_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/layout/fragment_register.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/navigation/nav_graph.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/navigation/nav_graph.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusApp/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetiocusApp/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../RetiocusApp/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/RetiocusWebApps_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/RetiocusWebApps_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RetiocusWebApps.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RetiocusWebApps.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/retiocus/RetiocusWebApps/websocket/endpoints/ChatServerEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/retiocus/RetiocusWebApps/websocket/endpoints/ChatServerEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/retiocus/RetiocusWebApps/websocket/endpoints/ChatsOfUserServerEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/retiocus/RetiocusWebApps/websocket/endpoints/ChatsOfUserServerEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/retiocus/RetiocusWebApps/websocket/endpoints/UsersWithCommonThemesServerEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/retiocus/RetiocusWebApps/websocket/endpoints/UsersWithCommonThemesServerEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RetiocusWebApps-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/RetiocusWebApps-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RetiocusWebApps-1.0-SNAPSHOT/WEB-INF/classes/com/example/retiocus/RetiocusWebApps/Chat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RetiocusWebApps-1.0-SNAPSHOT/WEB-INF/classes/com/example/retiocus/RetiocusWebApps/ChatCallback.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RetiocusWebApps-1.0-SNAPSHOT/WEB-INF/classes/com/example/retiocus/RetiocusWebApps/ChatInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RetiocusWebApps-1.0-SNAPSHOT/WEB-INF/classes/com/example/retiocus/RetiocusWebApps/ChatServerEndpoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RetiocusWebApps-1.0-SNAPSHOT/WEB-INF/classes/com/example/retiocus/RetiocusWebApps/ChatsOfUserServerEndpoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RetiocusWebApps-1.0-SNAPSHOT/WEB-INF/classes/com/example/retiocus/RetiocusWebApps/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RetiocusWebApps-1.0-SNAPSHOT/WEB-INF/classes/com/example/retiocus/RetiocusWebApps/MessageDecoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RetiocusWebApps-1.0-SNAPSHOT/WEB-INF/classes/com/example/retiocus/RetiocusWebApps/MessageEncoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RetiocusWebApps-1.0-SNAPSHOT/WEB-INF/classes/com/example/retiocus/RetiocusWebApps/UserWithDeglossedData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RetiocusWebApps-1.0-SNAPSHOT/WEB-INF/lib/proto-google-cloud-firestore-v1beta1-0.88.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/RetiocusWebApps-1.0-SNAPSHOT/WEB-INF/lib/proto-google-cloud-firestore-v1beta1-0.88.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/retiocus/RetiocusWebApps/Chat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/retiocus/RetiocusWebApps/ChatCallback.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/retiocus/RetiocusWebApps/ChatInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/retiocus/RetiocusWebApps/ChatServerEndpoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/retiocus/RetiocusWebApps/ChatsOfUserServerEndpoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/retiocus/RetiocusWebApps/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/retiocus/RetiocusWebApps/MessageDecoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/retiocus/RetiocusWebApps/MessageEncoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/retiocus/RetiocusWebApps/UserWithDeglossedData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1tP2O3qQYHyGfjlgzzsfYmFvuas" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15527344" />
+    <property name="project.structure.side.proportion" value="0.60925925" />
+    <property name="settings.editor.selected.configurable" value="com.microsoft.alm.plugin.idea.common.ui.settings.TeamServicesConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="excludedTypes">
+      <set>
+        <option value="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="RetiocusWebApps:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/RetiocusWebApps_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="3d7829d4-aebd-4700-8b33-20ee7256165d" />
+        <option name="DEPLOY_TOMCAT_APPS" value="true" />
+        <option name="HTTP_PORT" value="8666" />
+        <option name="JNDI_PORT" value="8670" />
+      </server-settings>
+      <log_file alias="Tomcat Localhost Access Log" path="%IDEA_RUN:CATALINA_BASE%/logs/localhost_access_log.*" />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53425" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="RetiocusWebApps:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="Azure Web App: RetiocusWebApps:RetiocusWebApps" type="com.microsoft.intellij.run.configuration.WebAppConfigurationType" factoryName="Azure Web App">
+      <option name="OS" value="linux" />
+      <option name="appServicePlanId" value="/subscriptions/4c39c46a-f097-4783-8402-7d64f6de58cd/resourceGroups/CRUDPersonas/providers/Microsoft.Web/serverfarms/PlanGratis" />
+      <option name="appServicePlanName" value="" />
+      <option name="applicationLogLevel" value="Error" />
+      <option name="artifactIdentifier" value="com.example.retiocus:RetiocusWebApps:1.0-SNAPSHOT" />
+      <option name="azureArtifactType" value="Maven" />
+      <option name="creatingAppServicePlan" value="false" />
+      <option name="creatingNew" value="false" />
+      <option name="creatingResGrp" value="false" />
+      <option name="deployToRoot" value="true" />
+      <option name="deployToSlot" value="false" />
+      <option name="enableApplicationLog" value="false" />
+      <option name="enableDetailedErrorMessage" value="false" />
+      <option name="enableFailedRequestTracing" value="false" />
+      <option name="enableWebServerLogging" value="false" />
+      <option name="jdkVersion">
+        <JavaVersion />
+      </option>
+      <option name="newSlotConfigurationSource" />
+      <option name="newSlotName" />
+      <option name="openBrowserAfterDeployment" value="false" />
+      <option name="operatingSystem" value="windows" />
+      <option name="packaging" value="war" />
+      <option name="pricing" value="" />
+      <option name="projectBase" value="" />
+      <option name="projectType" value="" />
+      <option name="region" value="westeurope" />
+      <option name="resourceGroup" value="" />
+      <option name="slotName" />
+      <option name="slotPanelVisible" value="false" />
+      <option name="stack" value="TOMCAT" />
+      <option name="subscriptionId" value="4c39c46a-f097-4783-8402-7d64f6de58cd" />
+      <option name="targetName" value="RetiocusWebApps-1.0-SNAPSHOT.war" />
+      <option name="targetPath" value="" />
+      <option name="version" value="8.5-jre8" />
+      <option name="webAppContainer" value="tomcat 9.0" />
+      <option name="webAppId" value="/subscriptions/4c39c46a-f097-4783-8402-7d64f6de58cd/resourceGroups/RetiocusWebApps/providers/Microsoft.Web/sites/retiocuswebapps" />
+      <option name="webAppJavaVersion" value="1.8" />
+      <option name="webAppName" value="" />
+      <option name="webContainer" value="" />
+      <option name="webServerLogQuota" value="35" />
+      <option name="webServerRetentionPeriod" />
+      <javaVersion javaVersion="1.8" />
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="false" file="$PROJECT_DIR$/pom.xml" goal="package" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="RetiocusWebApps:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="Azure" type="com.microsoft.intellij.run.configuration.WebAppConfigurationType" factoryName="Azure Web App">
+      <option name="OS" value="linux" />
+      <option name="appServicePlanId" value="/subscriptions/4c39c46a-f097-4783-8402-7d64f6de58cd/resourceGroups/CRUDPersonas/providers/Microsoft.Web/serverfarms/PlanGratis" />
+      <option name="appServicePlanName" value="" />
+      <option name="applicationLogLevel" value="Error" />
+      <option name="artifactIdentifier" value="com.example.retiocus:RetiocusWebApps:1.0-SNAPSHOT" />
+      <option name="azureArtifactType" value="Maven" />
+      <option name="creatingAppServicePlan" value="false" />
+      <option name="creatingNew" value="false" />
+      <option name="creatingResGrp" value="false" />
+      <option name="deployToRoot" value="true" />
+      <option name="deployToSlot" value="false" />
+      <option name="enableApplicationLog" value="false" />
+      <option name="enableDetailedErrorMessage" value="false" />
+      <option name="enableFailedRequestTracing" value="false" />
+      <option name="enableWebServerLogging" value="false" />
+      <option name="jdkVersion">
+        <JavaVersion />
+      </option>
+      <option name="newSlotConfigurationSource" />
+      <option name="newSlotName" />
+      <option name="openBrowserAfterDeployment" value="false" />
+      <option name="operatingSystem" value="windows" />
+      <option name="packaging" value="war" />
+      <option name="pricing" value="" />
+      <option name="projectBase" value="" />
+      <option name="projectType" value="" />
+      <option name="region" value="westeurope" />
+      <option name="resourceGroup" value="" />
+      <option name="slotName" />
+      <option name="slotPanelVisible" value="false" />
+      <option name="stack" value="TOMCAT" />
+      <option name="subscriptionId" value="4c39c46a-f097-4783-8402-7d64f6de58cd" />
+      <option name="targetName" value="RetiocusWebApps-1.0-SNAPSHOT.war" />
+      <option name="targetPath" value="" />
+      <option name="version" value="8.5-jre8" />
+      <option name="webAppContainer" value="tomcat 9.0" />
+      <option name="webAppId" value="/subscriptions/4c39c46a-f097-4783-8402-7d64f6de58cd/resourceGroups/RetiocusWebApps/providers/Microsoft.Web/sites/retiocuswebapps" />
+      <option name="webAppJavaVersion" value="1.8" />
+      <option name="webAppName" value="" />
+      <option name="webContainer" value="" />
+      <option name="webServerLogQuota" value="35" />
+      <option name="webServerRetentionPeriod" />
+      <javaVersion javaVersion="1.8" />
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="false" file="$PROJECT_DIR$/pom.xml" goal="package" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Azure Web App.Azure" />
+      <item itemvalue="Tomcat Server.Tomcat 9" />
+      <item itemvalue="Azure Web App.Azure Web App: RetiocusWebApps:RetiocusWebApps" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f8cbf41-0925-4dc9-9593-c3fbc055c0f9" name="Default Changelist" comment="" />
+      <created>1622656368573</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622656368573</updated>
+      <workItem from="1622656369733" duration="5018000" />
+      <workItem from="1622670753786" duration="891000" />
+      <workItem from="1622717603805" duration="9523000" />
+      <workItem from="1622786320306" duration="2421000" />
+      <workItem from="1623306192208" duration="3396000" />
+      <workItem from="1623330080276" duration="1990000" />
+      <workItem from="1623334460013" duration="11599000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -19,6 +19,8 @@ namespace API.Controllers
             return new string[] { "value1", "value2" };
         }
         
+        [Route("api/Chats/{uid}")]
+        [HttpGet]
         // GET: api/Chats/5
         public void Get(String uid)
         {
@@ -48,19 +50,16 @@ namespace API.Controllers
         {
             HttpResponseMessage respuesta;
 
-            bool success = false;
-
             try
             {
-                success = ChatsPostMethods.postChatNuevo(chat);
+                bool success = ChatsPostMethods.postChatNuevo(chat);
+                respuesta = Request.CreateResponse(!success ? HttpStatusCode.NoContent : HttpStatusCode.OK);
             }
             catch (SqlException sqlEx)
             {
                 respuesta = Request.CreateErrorResponse(HttpStatusCode.ServiceUnavailable,
                     "Error en la base de datos: " + sqlEx.StackTrace);
             }
-
-            respuesta = Request.CreateResponse(!success ? HttpStatusCode.NoContent : HttpStatusCode.OK);
 
             throw new HttpResponseException(respuesta);
         }

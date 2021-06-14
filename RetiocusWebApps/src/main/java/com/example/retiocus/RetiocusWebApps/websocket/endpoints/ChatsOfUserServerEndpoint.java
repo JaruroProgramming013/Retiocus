@@ -12,8 +12,9 @@ import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
+import java.util.logging.Logger;
 
-@ServerEndpoint(value = "chats/{uid}/allChats")
+@ServerEndpoint(value = "/chats/{uid}/allChats")
 public class ChatsOfUserServerEndpoint {
     private Session sesionActual;
     private final Retrofit retrofit=new Retrofit.Builder()
@@ -62,9 +63,9 @@ public class ChatsOfUserServerEndpoint {
             synchronized (endpoint){
                 if(endpoint.sesionActual.getId().equals(chatListWithPetitioner.getUid())) {
                     try {
-                        endpoint.sesionActual.getBasicRemote().sendObject(chatListWithPetitioner);
+                        endpoint.sesionActual.getAsyncRemote().sendObject(chatListWithPetitioner);
                         endpoint.sesionActual.close();
-                    } catch (IOException | EncodeException e) {
+                    } catch (IOException e) {
                         e.printStackTrace();
                     }
                 }

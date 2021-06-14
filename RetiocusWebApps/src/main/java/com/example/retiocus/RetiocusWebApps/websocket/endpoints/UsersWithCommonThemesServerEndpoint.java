@@ -11,10 +11,12 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 import javax.websocket.*;
 import javax.websocket.server.PathParam;
+import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
 
+@ServerEndpoint(value = "/usersWithCommonThemes/{uid}")
 public class UsersWithCommonThemesServerEndpoint {
     private Session sesionActual;
     private final Retrofit retrofit=new Retrofit.Builder()
@@ -63,9 +65,9 @@ public class UsersWithCommonThemesServerEndpoint {
             synchronized (endpoint){
                 if(endpoint.sesionActual.getId().equals(userListWithPetitioner.getUidSolicitante())) {
                     try {
-                        endpoint.sesionActual.getBasicRemote().sendObject(userListWithPetitioner);
+                        endpoint.sesionActual.getAsyncRemote().sendObject(userListWithPetitioner);
                         endpoint.sesionActual.close();
-                    } catch (IOException | EncodeException e) {
+                    } catch (IOException e) {
                         e.printStackTrace();
                     }
                 }

@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
 
-@ServerEndpoint(value = "chats/{uid}",
+@ServerEndpoint(value = "/chats/{uid}",
                 decoders = MessageDecoder.class,
                 encoders = MessageEncoder.class)
 public class ChatServerEndpoint {
@@ -55,12 +55,8 @@ public class ChatServerEndpoint {
     private static void enviarMensaje(Message mensaje){
         endpointsServer.forEach(endpoint->{
             synchronized (endpoint){
-                try {
-                    if(endpoint.sesionActual.getId().equals(mensaje.getTo()))
-                        endpoint.sesionActual.getBasicRemote().sendObject(mensaje);
-                }catch (IOException | EncodeException exception){
-                    exception.printStackTrace();
-                }
+                if(endpoint.sesionActual.getId().equals(mensaje.getTo()))
+                    endpoint.sesionActual.getAsyncRemote().sendObject(mensaje);
             }
         });
     }

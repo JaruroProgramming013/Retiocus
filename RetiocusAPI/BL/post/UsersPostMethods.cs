@@ -12,6 +12,11 @@ namespace BL.post
 {
     public static class UsersPostMethods
     {
+        /// <summary>
+        /// Añade un nuevo usuario a la BBDD
+        /// </summary>
+        /// <param name="uidUsuario">UID del Usuario a insertar</param>
+        /// <returns>true si se ha insertado, false si no</returns>
         public static bool postUsuarioNuevo(String uidUsuario)
         {
             bool success = false;

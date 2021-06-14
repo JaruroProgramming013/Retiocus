@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "signalr1": {
+      "restored": true,
+      "restoreTime": "2021-06-11T08:39:17.3035487Z"
+    }
+  },
+  "parameters": {
+    "signalr1.resourceGroupName": {
+      "Name": "signalr1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "RetiocusWebApps"
+    },
+    "signalr1.subscriptionId": {
+      "Name": "signalr1.subscriptionId",
+      "Type": "subscription",
+      "Value": "4c39c46a-f097-4783-8402-7d64f6de58cd"
+    }
+  }
+}

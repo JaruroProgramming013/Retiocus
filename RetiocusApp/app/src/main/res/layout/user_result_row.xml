@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/elementoChatNuevo"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:id="@+id/iconoUsuarioResultRow"
+        android:src="@drawable/retiocus_main_pfp"
+        android:layout_margin="@dimen/fab_margin"
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+        app:strokeWidth="1dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombreUsuarioResultRow"
+        android:layout_toEndOf="@id/iconoUsuarioResultRow"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:textSize="20sp"
+        android:fontFamily="@font/title_font_jetbrains_nl_bold"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/nombreUsuarioResultRow"
+        android:layout_toEndOf="@id/iconoUsuarioResultRow">
+        <TextView
+
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/common_themes_text"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="30dp"
+            android:id="@+id/numeroTemasComunes"
+            android:fontFamily="@font/title_font_jetbrains_nl_bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/uidUsuarioResult"
+        />
+</RelativeLayout>

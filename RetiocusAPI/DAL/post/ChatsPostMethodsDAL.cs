@@ -11,6 +11,11 @@ namespace DAL.post
 {
     public static class ChatsPostMethodsDAL
     {
+        /// <summary>
+        /// Añade un nuevo chat a la BBDD
+        /// </summary>
+        /// <param name="chat">El chat a añadir</param>
+        /// <returns>true si se ha insertado, false si no</returns>
         public static bool postChatNuevo(Chat chat)
         {
             bool success = false;

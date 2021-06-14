@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Entities
 {
-    public class Tema
+    public class Tema : IComparable<Tema>, IEquatable<Tema>
     {
         public int ID { get; }
-        public string Nombre { get; set; }
+        public string Nombre { get; }
 
         public Tema()
         {
@@ -23,6 +23,21 @@ namespace Entities
             Nombre = nombre;
         }
 
+        public int CompareTo(Tema other)
+        {
+            return String.Compare(Nombre, other.Nombre, StringComparison.OrdinalIgnoreCase);
+        }
+
+        public bool Equals(Tema other)
+        {
+            return String.Equals(Nombre, other.Nombre, StringComparison.OrdinalIgnoreCase);
+        }
+
+        /// <summary>
+        /// Equals necesario para saber cuando no llegan datos de la BBDD
+        /// </summary>
+        /// <param name="obj">Objeto a comparar</param>
+        /// <returns>true si es igual, false si no lo es</returns>
         public override bool Equals(object obj)
         {
             bool esIgual = false;

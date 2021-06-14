@@ -42,16 +42,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="delete\PreferencesDeleteMethodsDAL.cs" />
     <Compile Include="get\ChatsGetMethodsDAL.cs" />
+    <Compile Include="get\MessagesGetMethodsDAL.cs" />
     <Compile Include="get\ThemesGetMethodsDAL.cs" />
     <Compile Include="get\UsersGetMethodsDAL.cs" />
     <Compile Include="post\ChatsPostMethodsDAL.cs" />
+    <Compile Include="post\MessagesPostMethodsDAL.cs" />
+    <Compile Include="post\PreferencesPostMethodsDAL.cs" />
     <Compile Include="post\ThemesPostMethodsDAL.cs" />
     <Compile Include="post\UsersPostMethodsDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="delete\" />
     <Folder Include="put\" />
   </ItemGroup>
   <ItemGroup>

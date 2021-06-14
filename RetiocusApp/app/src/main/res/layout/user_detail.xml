@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:id="@+id/iconoUsuarioDetail"
+        app:strokeColor="@android:color/darker_gray"
+        android:src="@drawable/retiocus_main_pfp"
+        android:layout_margin="@dimen/fab_margin"
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+        app:strokeWidth="1dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombreUsuarioDetail"
+        android:layout_toEndOf="@id/iconoUsuarioDetail"
+        android:layout_marginTop="60dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/title_font_jetbrains_nl_bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/correoCurrentUser"
+        android:layout_below="@id/nombreUsuarioDetail"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:layout_alignStart="@id/nombreUsuarioDetail"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temas_usuario_text"
+        android:layout_below="@id/iconoUsuarioDetail"
+        android:id="@+id/temasDeUsuarioPlaceholder"
+        android:layout_alignStart="@id/iconoUsuarioDetail"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/coleccionTemas"
+        android:layout_below="@id/temasDeUsuarioPlaceholder"
+        android:layout_alignStart="@id/iconoUsuarioDetail"
+        android:layout_alignEnd="@id/temasDeUsuarioPlaceholder"
+        />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/botonAnhadirChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coleccionTemas"
+        android:layout_alignStart="@id/iconoUsuarioDetail"
+        android:text="@string/add_new_chat_ud_button"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/uidUsuarioDetail"
+        />
+</RelativeLayout>

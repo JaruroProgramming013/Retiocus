@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/filaChat"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:id="@+id/iconoUsuarioChatRow"
+        app:strokeColor="@android:color/darker_gray"
+        android:src="@drawable/retiocus_main_pfp"
+        android:layout_margin="@dimen/fab_margin"
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+        app:strokeWidth="1dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombreUsuarioChatRow"
+        android:layout_toEndOf="@id/iconoUsuarioChatRow"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:textSize="20sp"
+        android:fontFamily="@font/title_font_jetbrains_nl_bold"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/nombreUsuarioChatRow"
+        android:layout_toEndOf="@id/iconoUsuarioChatRow">
+        <TextView
+
+            android:id="@+id/ultimoMensaje"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="30dp"
+            android:id="@+id/horaEnvio"
+            android:fontFamily="@font/title_font_jetbrains_nl_bold"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/uidUsuarioChat"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/idChat"
+        />
+</RelativeLayout>

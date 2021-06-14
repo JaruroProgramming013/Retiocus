@@ -41,16 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="delete\PreferencesDeleteMethods.cs" />
     <Compile Include="get\ChatsGetMethods.cs" />
+    <Compile Include="get\MessagesGetMethods.cs" />
     <Compile Include="get\ThemesGetMethods.cs" />
     <Compile Include="get\UsersGetMethods.cs" />
     <Compile Include="post\ChatsPostMethods.cs" />
+    <Compile Include="post\MessagesPostMethods.cs" />
+    <Compile Include="post\PreferencesPostMethods.cs" />
     <Compile Include="post\ThemesPostMethods.cs" />
     <Compile Include="post\UsersPostMethods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="delete\" />
     <Folder Include="put\" />
   </ItemGroup>
   <ItemGroup>

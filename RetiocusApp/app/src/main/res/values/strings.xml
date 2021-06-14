@@ -24,4 +24,32 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="welcome">¡Bienvenido a Retiocus!</string>
+    <string name="welcome_explanation">Es hora de terminar de configurar tu perfil de usuario.</string>
+    <string name="slider_instructions">Durante esta presentación, desliza hacia la izquierda o hacia la derecha para ir a la siguiente pestaña o a la posterior, respectivamente.</string>
+    <string name="select_pfp">Foto de perfil</string>
+    <string name="if_pfp_not_selected">Si no seleccionas una foto de perfil, tendrás la foto por defecto que ves en pantalla. Pasa a la siguiente pagina cuando acabes.</string>
+    <string name="seleccionar_temas">Seleccion de temas</string>
+    <string name="temas_instrucciones">Marca aquellos temas que quieras añadir a tu usuario y desmarca aquellos que quieras eliminar. Pasa a la siguiente página cuando acabes.</string>
+    <string name="user_setup_done">¡Ya está!</string>
+    <string name="done_instructions">Pulsa el botón de abajo para guardar los cambios.</string>
+    <string name="done_button">Finalizar</string>
+    <string name="done_note">Nota: al cambiar los temas sigues teniendo los mismos chats que antes sin importar el numero de preferencias que tengas en comun. Si no quieres tener un chat con preferencias distintas, has de borrarlo manualmente.</string>
+    <string name="clear_themes">Desmarcar todo</string>
+    <string name="search_theme">Busque un tema…</string>
+    <string name="restore_default_pfp">Restaurar</string>
+    <string name="edit_user">Editar tu perfil</string>
+    <string name="add_chat">Busca un chat</string>
+    <string name="log_out">Cerrar sesion</string>
+    <string name="common_themes_text">Numero de temas comunes:</string>
+    <string name="temas_usuario_text">A este usuario le atraen los siguientes temas:</string>
+    <string name="add_new_chat_ud_button">Empezar chat</string>
+    <string name="edit_credentials_open">Editar credenciales</string>
+    <string name="edit_photo_and_themes_open">Cambiar foto y temas</string>
+    <string name="placeholder_edit_user">¿Que deseas hacer?</string>
+    <string name="peek_user_info">Ver mi perfil</string>
+    <string name="no_result">Ups… parece que no hay resultados. Añade alguna que otra preferencia mas.</string>
+    <string name="guardar_credenciales">Guardar credenciales</string>
+    <string name="please_confirm">Para cambiar las credenciales, inicia sesion de nuevo.</string>
+    <string name="send">Enviar</string>
 </resources>

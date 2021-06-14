@@ -26,6 +26,11 @@ namespace Entities
             this.UIDDos = UIDDos;
         }
 
+        /// <summary>
+        /// Equals necesario para saber cuando no llegan datos de la BBDD
+        /// </summary>
+        /// <param name="obj">Objeto a comparar</param>
+        /// <returns>true si es igual, false si no lo es</returns>
         public override bool Equals(object obj)
         {
             bool esIgual = false;

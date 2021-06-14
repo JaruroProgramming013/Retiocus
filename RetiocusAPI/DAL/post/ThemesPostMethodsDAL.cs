@@ -11,6 +11,11 @@ namespace DAL.post
 {
     public static class ThemesPostMethodsDAL
     {
+        /// <summary>
+        /// Añade un nuevo tema a la BBDD
+        /// </summary>
+        /// <param name="tema">Tema a insertar</param>
+        /// <returns>true si se ha insertado, false si no</returns>
         public static bool postTemaNuevo(Tema tema)
         {
             bool success = false;
@@ -29,9 +34,9 @@ namespace DAL.post
 
                 miComando.CommandType = CommandType.StoredProcedure;
 
-                miComando.CommandText = "AnhadirChat";
+                miComando.CommandText = "AnhadirTema";
 
-                parametroNombre.ParameterName = "@uidNombre";
+                parametroNombre.ParameterName = "@nombre";
 
                 parametroNombre.SqlDbType = SqlDbType.VarChar;
 
