@@ -1,18 +1,17 @@
-package com.jruiz.retiocusapp.websocket.models;
+package com.jruiz.retiocusapp.signalr.models;
 
 public class UserDetail {
-    private String uid,username,email;
+    private String uid;
+    private String username;
 
     public UserDetail() {
         uid="";
         username="";
-        email="";
     }
 
-    public UserDetail(String uid, String username, String email) {
+    public UserDetail(String uid, String username) {
         this.uid = uid;
         this.username = username;
-        this.email = email;
     }
 
     public String getUid() {
@@ -31,11 +30,4 @@ public class UserDetail {
         this.username = username;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
 }

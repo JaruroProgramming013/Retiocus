@@ -1,37 +1,37 @@
-package com.jruiz.retiocusapp.websocket.models;
+package com.jruiz.retiocusapp.signalr.models;
 
 public class ChatDetail {
     private int ID;
-    private UserDetail usuarioUno, usuarioDos;
+    private String usuarioSolicitante;
+    private UserDetail usuarioSolicitado;
 
-    public ChatDetail(int ID, UserDetail usuarioUno, UserDetail usuarioDos) {
+    public ChatDetail(int ID, String usuarioSolicitante, UserDetail usuarioSolicitado) {
         this.ID = ID;
-        this.usuarioUno = usuarioUno;
-        this.usuarioDos = usuarioDos;
+        this.usuarioSolicitante = usuarioSolicitante;
+        this.usuarioSolicitado = usuarioSolicitado;
     }
 
     public int getID() {
         return ID;
     }
 
+    public String getUsuarioSolicitante() {
+        return usuarioSolicitante;
+    }
+
+    public UserDetail getUsuarioSolicitado() {
+        return usuarioSolicitado;
+    }
+
     public void setID(int ID) {
         this.ID = ID;
     }
 
-    public UserDetail getUsuarioUno() {
-        return usuarioUno;
+    public void setUsuarioSolicitante(String usuarioSolicitante) {
+        this.usuarioSolicitante = usuarioSolicitante;
     }
 
-    public void setUsuarioUno(UserDetail usuarioUno) {
-        this.usuarioUno = usuarioUno;
+    public void setUsuarioSolicitado(UserDetail usuarioSolicitado) {
+        this.usuarioSolicitado = usuarioSolicitado;
     }
-
-    public UserDetail getUsuarioDos() {
-        return usuarioDos;
-    }
-
-    public void setUsuarioDos(UserDetail usuarioDos) {
-        this.usuarioDos = usuarioDos;
-    }
-
 }
